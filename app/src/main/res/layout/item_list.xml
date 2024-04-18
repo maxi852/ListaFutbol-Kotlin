@@ -10,7 +10,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -29,28 +29,28 @@
         android:id="@+id/item_apodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="9dp"
         android:text="Apodo"
-        app:layout_constraintEnd_toStartOf="@+id/item_estadio"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/item_escudo"
+        app:layout_constraintTop_toBottomOf="@+id/item_nombre" />
 
     <TextView
         android:id="@+id/item_estadio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="9dp"
         android:text="Estadio"
-        app:layout_constraintEnd_toStartOf="@+id/item_pais"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/item_apodo"
+        app:layout_constraintStart_toEndOf="@+id/item_escudo" />
 
     <ImageView
         android:id="@+id/item_pais"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
